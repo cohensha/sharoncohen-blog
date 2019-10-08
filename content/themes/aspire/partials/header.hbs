@@ -1,0 +1,46 @@
+<header class='c-header
+  {{#is 'post, page'}} c-header--has-cover {{/is}}'>
+
+  <div class='o-grid'>
+
+    <div class='o-grid__col o-grid__col--3-4-s o-grid__col--1-4-l'>
+      <div class='c-logo'>
+        {{#if @site.logo}}
+          <a href='{{ @site.url }}'>
+            <img class='c-logo__img' src='{{ @site.logo }}' alt='{{ @site.title }}'>
+          </a>
+        {{else}}
+          <a class='c-logo__link' href='{{ @site.url }}'>{{ @site.title }}</a>
+        {{/if}}
+      </div>
+    </div>
+
+    <div class='o-grid__col o-grid__col--1-4-s o-grid__col--3-4-l'>
+      <div class='c-off-canvas-content js-off-canvas-content'>
+        <label class='js-off-canvas-toggle c-off-canvas-toggle c-off-canvas-toggle--close'>
+          <span class='c-off-canvas-toggle__icon'></span>
+        </label>
+
+        <div class='o-grid'>
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--3-4-l'>
+            <ul class='c-nav o-plain-list'>
+              {{ navigation }}
+            </ul>
+          </div>
+
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--1-4-l'>
+            {{> social-nav }}
+          </div>
+        </div>
+      </div>
+
+      <label class='js-off-canvas-toggle c-off-canvas-toggle'>
+        <span class='c-off-canvas-toggle__icon'></span>
+      </label>
+    </div>
+
+  </div>
+
+</header>
+
+{{> search-form }}

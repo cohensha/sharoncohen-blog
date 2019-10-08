@@ -1,0 +1,27 @@
+{{!< default}}
+
+{{#post}}
+
+{{#if feature_image}}
+  <div class='c-post-hero' style='background-image: url({{ feature_image }})'></div>
+{{/if}}
+
+<div class='o-wrapper'>
+
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--center o-grid__col--2-3-m'>
+      <article class='c-{{ post_class }} is-page'>
+
+        <h1 class='c-post__title'>{{ title }}</h1>
+
+        <div class='c-content'>
+          {{ content }}
+        </div>
+
+      </article>
+    </div>
+  </div>
+
+</div>
+
+{{/post}}
