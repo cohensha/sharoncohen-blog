@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\content",
-    "\\current"
+    "\\content\\themes",
+    "\\content\\themes\\aspire",
+    "\\content\\themes\\aspire\\partials",
+    "\\current\\content"
   ],
   "PreviewInSolutionExplorer": false
 }
