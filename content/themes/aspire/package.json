@@ -44,6 +44,6 @@
     "dart-sass": "^1.17.0",
     "gulp": "^4.0.0",
     "gulp-sass": "^3.2.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   }
 }
